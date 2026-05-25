@@ -1,12 +1,10 @@
 spring:
   application:
     name: StoraX
-
-spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/storax
+    url: jdbc:postgresql://localhost:5432/storax_db
     username: postgres
-    password: password
+    password: password123
 
   jpa:
     hibernate:
