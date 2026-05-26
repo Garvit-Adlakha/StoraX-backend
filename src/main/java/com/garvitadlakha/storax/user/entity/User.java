@@ -33,7 +33,7 @@ public class User {
     private UUID id;
 
     @Column(nullable = false)
-    private String name;
+    private String username;
 
     @Column(unique = true, nullable = false)
     private String email;
@@ -60,5 +60,14 @@ public class User {
     @PreUpdate
     protected void onUpdate() {
         this.updatedAt = Instant.now();
+    }
+
+    public static User createRegisteredUser(String username, String email, String passwordHash) {
+        User user = new User();
+        user.username = username;
+        user.email = email;
+        user.passwordHash = passwordHash;
+        user.role = Role.USER;
+        return user;
     }
 }
