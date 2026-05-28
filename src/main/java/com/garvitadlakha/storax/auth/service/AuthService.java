@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.garvitadlakha.storax.auth.dto.RegisterRequest;
 import com.garvitadlakha.storax.auth.dto.RegisterResponse;
+import com.garvitadlakha.storax.common.exception.DuplicateResourceException;
 import com.garvitadlakha.storax.user.entity.User;
 import com.garvitadlakha.storax.user.repository.UserRepository;
 
@@ -24,7 +25,7 @@ public class AuthService {
         Boolean existingUser=userRepository.existsByEmail(request.getEmail());
 
         if(existingUser){
-            throw new RuntimeException("User with email already exists");
+            throw new DuplicateResourceException("User with email already exists");
         }
 
         String hashedPassword = passwordEncoder.encode(request.getPassword());
