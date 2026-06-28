@@ -1,4 +1,4 @@
-package com.garvitadlakha.storax.common.config;
+package com.garvitadlakha.storax.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
