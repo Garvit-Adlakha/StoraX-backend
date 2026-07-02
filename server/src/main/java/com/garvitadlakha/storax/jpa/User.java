@@ -1,4 +1,4 @@
-package com.garvitadlakha.storax.user.entity;
+package com.garvitadlakha.storax.jpa;
 
 import java.time.Instant;
 import java.util.UUID;

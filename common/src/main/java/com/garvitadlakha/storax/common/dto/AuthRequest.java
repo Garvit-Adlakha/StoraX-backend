@@ -1,4 +1,4 @@
-package com.garvitadlakha.storax.auth.dto;
+package com.garvitadlakha.storax.common.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Email;

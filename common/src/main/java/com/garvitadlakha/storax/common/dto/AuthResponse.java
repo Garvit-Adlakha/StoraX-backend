@@ -1,6 +1,4 @@
-package com.garvitadlakha.storax.auth.dto;
-
-import com.garvitadlakha.storax.common.dto.BaseResponse;
+package com.garvitadlakha.storax.common.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;

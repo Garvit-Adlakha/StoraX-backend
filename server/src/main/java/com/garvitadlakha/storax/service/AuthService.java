@@ -1,10 +1,10 @@
-package com.garvitadlakha.storax.auth.service;
+package com.garvitadlakha.storax.service;
 
 import org.springframework.stereotype.Service;
 
-import com.garvitadlakha.storax.auth.dto.RegisterRequest;
-import com.garvitadlakha.storax.auth.dto.RegisterResponse;
-import com.garvitadlakha.storax.auth.service.handler.AuthRegistrationHandler;
+import com.garvitadlakha.storax.common.dto.RegisterRequest;
+import com.garvitadlakha.storax.common.dto.RegisterResponse;
+import com.garvitadlakha.storax.service.handler.AuthRegistrationHandler;
 
 import lombok.RequiredArgsConstructor;
 

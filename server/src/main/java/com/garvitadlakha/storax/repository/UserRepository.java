@@ -1,11 +1,11 @@
-package com.garvitadlakha.storax.user.repository;
+package com.garvitadlakha.storax.repository;
 
 import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.garvitadlakha.storax.user.entity.User;
+import com.garvitadlakha.storax.jpa.User;
 
 public interface UserRepository extends JpaRepository<User, UUID> {
     boolean existsByEmail(String email);
